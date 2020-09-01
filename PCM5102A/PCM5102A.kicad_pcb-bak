@@ -11,6 +11,10 @@
 
   (page A4)
   (title_block
+    (title "5V PCM5102 interface for Raspberry PI (PLL Operation)")
+    (date 2020-08-28)
+    (rev 0.5)
+    (company 6r1d)
     (comment 1 "Attention: board is not tested yet")
   )
 
