@@ -16,7 +16,8 @@ If you want to do tests right now, **feel free to create an issue**! I will prov
 
 ## Current boards
 
-| Directory                    | State                            | Description                                         |
-| ---------------------------- | -------------------------------- | --------------------------------------------------- |
-| [PCM5102A](/PCM5102A)        | UNTESTED                         | PCM5102A [I²S](https://en.wikipedia.org/wiki/I%C2%B2S) dac with TPA6132A2 headphone amp |
-| [MIDI_input](/MIDI_input)    | UNTESTED, waiting for components | MIDI I/O board for 5V devices                       |
+| Directory                             | State                            | Description                                         |
+| ------------------------------------- | -------------------------------- | --------------------------------------------------- |
+| [PCM5102A](/PCM5102A)                 | UNTESTED                         | PCM5102A [I²S](https://en.wikipedia.org/wiki/I%C2%B2S) dac with TPA6132A2 headphone amp |
+| [MIDI input](/MIDI_input)             | UNTESTED, waiting for components | MIDI I/O board for 5V devices                       |
+| [MCP4725 breakout](/MCP4725_breakout) | UNTESTED                         | I²C DAC breakout board                              |

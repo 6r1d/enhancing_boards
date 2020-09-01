@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name JumperPads)(type KiCad)(uri ${KIPRJMOD}/lib/JumperPads.pretty)(options "")(descr "")(disabled))
+  (lib (name Jumper_KiCad_footprints)(type KiCad)(uri ${KIPRJMOD}/lib/Jumper.pretty)(options "")(descr ""))
+)
