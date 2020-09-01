@@ -12,7 +12,8 @@ I had some of those mux board around for quite some time and they are working ni
 
 ## To-Do
 
-- [ ] Make a board
+- [ ] Use a multimeter's continuity testing on the original to ensure I'm using correct pins
+- [ ] Order a board prototype
 - [ ] Do a bunch of tests to determine it's not worse than normal breakout boards
 - [ ] Create a 8-pin layout
 
