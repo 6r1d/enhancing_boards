@@ -1,0 +1,521 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 7874 4724
+encoding utf-8
+Sheet 1 1
+Title "MIDI 5V I/O circuit"
+Date "2020-08-26"
+Rev "0.8"
+Comp "6r1d"
+Comment1 "Currently untested, awaits DIN-5 sockets to check sizes and pins"
+Comment2 "Based on a circuit by Notes and Volts and MIDI DIN electrical specification"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DIN-5_180degree J_OUT_1
+U 1 1 5F448164
+P 1800 1000
+F 0 "J_OUT_1" H 1800 633 50  0000 C CNN
+F 1 "DIN-5_180degree" H 1800 724 50  0000 C CNN
+F 2 "w_conn_av:din-5" H 1800 1000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5F49ADEA
+P 2900 1100
+F 0 "#PWR04" H 2900 950 50  0001 C CNN
+F 1 "+5V" V 2915 1228 50  0000 L CNN
+F 2 "" H 2900 1100 50  0001 C CNN
+F 3 "" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5F49B7A9
+P 2700 1100
+F 0 "R2" V 2600 1100 50  0000 C CNN
+F 1 "220" V 2800 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2740 1090 50  0001 C CNN
+F 3 "~" H 2700 1100 50  0001 C CNN
+	1    2700 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1100 2150 1100
+Wire Wire Line
+	2850 1100 2900 1100
+$Comp
+L power:GND #PWR05
+U 1 1 5F49E9A1
+P 1800 1350
+F 0 "#PWR05" H 1800 1100 50  0001 C CNN
+F 1 "GND" H 1805 1177 50  0000 C CNN
+F 2 "" H 1800 1350 50  0001 C CNN
+F 3 "" H 1800 1350 50  0001 C CNN
+	1    1800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1300 1800 1350
+Text GLabel 750  1100 0    50   Input ~ 0
+TX
+Wire Wire Line
+	1450 1100 1500 1100
+Text Notes 600  2400 0    50   ~ 0
+Output circuit
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5F4D0281
+P 1300 1100
+F 0 "FB1" V 1150 1100 50  0000 C CNN
+F 1 "1k 100mHz" V 1450 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 1230 1100 50  0001 C CNN
+F 3 "~" H 1300 1100 50  0001 C CNN
+	1    1300 1100
+	0    1    1    0   
+$EndComp
+Text Notes 3400 2400 0    50   ~ 0
+Input circuit
+Wire Wire Line
+	3450 1100 3500 1100
+$Comp
+L Connector:DIN-5_180degree J_IN_1
+U 1 1 5F458A90
+P 3800 1000
+F 0 "J_IN_1" H 3800 633 50  0000 C CNN
+F 1 "DIN-5_180degree" H 3800 724 50  0000 C CNN
+F 2 "w_conn_av:din-5" H 3800 1000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3800 1000 50  0001 C CNN
+	1    3800 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 900  5950 900 
+Connection ~ 5950 900 
+Wire Wire Line
+	5650 1450 5950 1450
+Wire Wire Line
+	5950 1450 6000 1450
+Connection ~ 5950 1450
+Text GLabel 6000 1450 2    50   Input ~ 0
+RX
+Wire Wire Line
+	5950 850  5950 900 
+Wire Wire Line
+	5700 1550 5700 2100
+Wire Wire Line
+	5650 1550 5700 1550
+$Comp
+L power:GND #PWR02
+U 1 1 5F441C3F
+P 5850 2100
+F 0 "#PWR02" H 5850 1850 50  0001 C CNN
+F 1 "GND" V 5850 1900 50  0000 C CNN
+F 2 "" H 5850 2100 50  0001 C CNN
+F 3 "" H 5850 2100 50  0001 C CNN
+	1    5850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1250 5850 1650
+Wire Wire Line
+	5650 1250 5850 1250
+Wire Wire Line
+	5650 1150 5800 1150
+Wire Wire Line
+	5950 900  5950 1000
+Wire Wire Line
+	5800 1150 5800 900 
+Wire Wire Line
+	5950 1450 5950 1300
+$Comp
+L power:+5V #PWR03
+U 1 1 5F43A118
+P 5950 850
+F 0 "#PWR03" H 5950 700 50  0001 C CNN
+F 1 "+5V" H 5965 1023 50  0000 C CNN
+F 2 "" H 5950 850 50  0001 C CNN
+F 3 "" H 5950 850 50  0001 C CNN
+	1    5950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F439DC8
+P 5700 2100
+F 0 "#PWR01" H 5700 1850 50  0001 C CNN
+F 1 "GND" V 5700 1900 50  0000 C CNN
+F 2 "" H 5700 2100 50  0001 C CNN
+F 3 "" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5F433A78
+P 5850 1800
+F 0 "R5" V 5750 1750 50  0000 L CNN
+F 1 "4.7k" V 5950 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5890 1790 50  0001 C CNN
+F 3 "~" H 5850 1800 50  0001 C CNN
+	1    5850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5F43376F
+P 5950 1150
+F 0 "R4" V 5850 1100 50  0000 L CNN
+F 1 "220" V 6050 1100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5990 1140 50  0001 C CNN
+F 3 "~" H 5950 1150 50  0001 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:6N138 U1
+U 1 1 5F43292B
+P 5350 1350
+F 0 "U1" H 5350 1817 50  0000 C CNN
+F 1 "6N138" H 5350 1726 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5640 1050 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 5640 1050 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D1
+U 1 1 5F431E0C
+P 4850 1350
+F 0 "D1" V 4850 1200 50  0000 L CNN
+F 1 "1N914" H 4750 1450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4850 1175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4850 1350 50  0001 C CNN
+	1    4850 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F431879
+P 4650 1100
+F 0 "R3" V 4550 1100 50  0000 C CNN
+F 1 "220" V 4750 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4690 1090 50  0001 C CNN
+F 3 "~" H 4650 1100 50  0001 C CNN
+	1    4650 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1100 2550 1100
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 5F4FFCFE
+P 2300 1100
+F 0 "FB2" V 2150 1100 50  0000 C CNN
+F 1 "1k 100mHz" V 2450 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 2230 1100 50  0001 C CNN
+F 3 "~" H 2300 1100 50  0001 C CNN
+	1    2300 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5F5000D0
+P 950 1100
+F 0 "R1" V 850 1100 50  0000 C CNN
+F 1 "220" V 1050 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 990 1090 50  0001 C CNN
+F 3 "~" H 950 1100 50  0001 C CNN
+	1    950  1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1100 1150 1100
+Wire Wire Line
+	750  1100 800  1100
+Wire Notes Line
+	550  550  3250 550 
+Wire Notes Line
+	550  550  550  2450
+Wire Notes Line
+	550  2450 3250 2450
+Wire Notes Line
+	3250 2450 3250 550 
+$Comp
+L Device:Ferrite_Bead FB3
+U 1 1 5F543F15
+P 4300 1100
+F 0 "FB3" V 4150 1100 50  0000 C CNN
+F 1 "1k 100mHz" V 4450 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 4230 1100 50  0001 C CNN
+F 3 "~" H 4300 1100 50  0001 C CNN
+	1    4300 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1100 4500 1100
+Wire Wire Line
+	4100 1100 4150 1100
+$Comp
+L Device:Ferrite_Bead FB4
+U 1 1 5F55D3AA
+P 4300 1700
+F 0 "FB4" V 4150 1700 50  0000 C CNN
+F 1 "1k 100mHz" V 4450 1700 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 4230 1700 50  0001 C CNN
+F 3 "~" H 4300 1700 50  0001 C CNN
+	1    4300 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1700 4150 1700
+$Comp
+L Device:C C1
+U 1 1 5F5630B6
+P 5350 1900
+F 0 "C1" V 5500 1850 50  0000 L CNN
+F 1 "0.1 uF" V 5200 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 1750 50  0001 C CNN
+F 3 "~" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1500 1000
+NoConn ~ 2100 1000
+$Comp
+L power:GND #PWR0101
+U 1 1 5F591762
+P 5550 2100
+F 0 "#PWR0101" H 5550 1850 50  0001 C CNN
+F 1 "GND" V 5550 1900 50  0000 C CNN
+F 2 "" H 5550 2100 50  0001 C CNN
+F 3 "" H 5550 2100 50  0001 C CNN
+	1    5550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2100 5550 1900
+Wire Wire Line
+	5850 1950 5850 2100
+Wire Wire Line
+	5500 1900 5550 1900
+Wire Wire Line
+	5050 1100 5050 1250
+NoConn ~ 4100 1000
+NoConn ~ 3500 1000
+Wire Wire Line
+	3800 1900 5200 1900
+Wire Wire Line
+	4800 1100 4850 1100
+Wire Wire Line
+	4850 1200 4850 1100
+Connection ~ 4850 1100
+Wire Wire Line
+	4850 1100 5050 1100
+Wire Wire Line
+	4450 1700 4850 1700
+Connection ~ 4850 1700
+Wire Wire Line
+	4850 1700 5050 1700
+Wire Notes Line
+	6200 2450 6200 550 
+Wire Notes Line
+	6200 550  3350 550 
+Wire Notes Line
+	3350 2450 6200 2450
+Wire Wire Line
+	3450 1100 3450 1700
+Wire Wire Line
+	3800 1300 3800 1900
+Wire Wire Line
+	4850 1500 4850 1700
+Wire Wire Line
+	5050 1450 5050 1700
+Wire Notes Line
+	3350 2450 3350 550 
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5F4756C5
+P 750 3050
+F 0 "J1" H 668 2625 50  0000 C CNN
+F 1 "Conn_01x04" H 668 2716 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 750 3050 50  0001 C CNN
+F 3 "~" H 750 3050 50  0001 C CNN
+	1    750  3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  3150 1000 3150
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F476FA5
+P 1350 3150
+F 0 "#PWR0103" H 1350 3000 50  0001 C CNN
+F 1 "+5V" V 1365 3278 50  0000 L CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  3050 1000 3050
+Text GLabel 1000 2950 2    50   Input ~ 0
+TX
+Text GLabel 1000 2850 2    50   Input ~ 0
+RX
+Wire Wire Line
+	950  2950 1000 2950
+Wire Wire Line
+	950  2850 1000 2850
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F48178A
+P 1850 2850
+F 0 "H1" H 1800 3050 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1950 2808 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 1850 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F4823C3
+P 2050 2850
+F 0 "H2" H 2000 3050 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 2808 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 2050 2850 50  0001 C CNN
+F 3 "~" H 2050 2850 50  0001 C CNN
+	1    2050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F482751
+P 2450 2850
+F 0 "H4" H 2400 3050 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2550 2808 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 2450 2850 50  0001 C CNN
+F 3 "~" H 2450 2850 50  0001 C CNN
+	1    2450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F482A2F
+P 2250 2850
+F 0 "H3" H 2200 3050 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2350 2808 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 2250 2850 50  0001 C CNN
+F 3 "~" H 2250 2850 50  0001 C CNN
+	1    2250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F485072
+P 1850 2950
+F 0 "#PWR0104" H 1850 2700 50  0001 C CNN
+F 1 "GND" V 1850 2750 50  0000 C CNN
+F 2 "" H 1850 2950 50  0001 C CNN
+F 3 "" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F485ED6
+P 2050 2950
+F 0 "#PWR0105" H 2050 2700 50  0001 C CNN
+F 1 "GND" V 2050 2750 50  0000 C CNN
+F 2 "" H 2050 2950 50  0001 C CNN
+F 3 "" H 2050 2950 50  0001 C CNN
+	1    2050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F486247
+P 2250 2950
+F 0 "#PWR0106" H 2250 2700 50  0001 C CNN
+F 1 "GND" V 2250 2750 50  0000 C CNN
+F 2 "" H 2250 2950 50  0001 C CNN
+F 3 "" H 2250 2950 50  0001 C CNN
+	1    2250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F486E1F
+P 2450 2950
+F 0 "#PWR0107" H 2450 2700 50  0001 C CNN
+F 1 "GND" V 2450 2750 50  0000 C CNN
+F 2 "" H 2450 2950 50  0001 C CNN
+F 3 "" H 2450 2950 50  0001 C CNN
+	1    2450 2950
+	1    0    0    -1  
+$EndComp
+Text Notes 600  3400 0    50   ~ 0
+Inputs with inverse\npolarity protection
+Wire Notes Line
+	550  3450 550  2550
+Wire Notes Line
+	1650 2550 1650 3450
+Wire Notes Line
+	1750 2550 1750 3450
+Wire Notes Line
+	1750 3450 2550 3450
+Wire Notes Line
+	2550 3450 2550 2550
+Wire Notes Line
+	2550 2550 1750 2550
+Text Notes 1800 3400 0    50   ~ 0
+Mount holes
+$Comp
+L Device:D D2
+U 1 1 5F4682EC
+P 1150 3150
+F 0 "D2" H 1050 3100 50  0000 C CNN
+F 1 "D" H 1150 3024 50  0001 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 1150 3150 50  0001 C CNN
+F 3 "~" H 1150 3150 50  0001 C CNN
+	1    1150 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5F4686D0
+P 1150 3050
+F 0 "D3" H 1250 3100 50  0000 C CNN
+F 1 "D" H 1150 2924 50  0001 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 1150 3050 50  0001 C CNN
+F 3 "~" H 1150 3050 50  0001 C CNN
+	1    1150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3150 1350 3150
+$Comp
+L power:GND #PWR0102
+U 1 1 5F476304
+P 1350 3050
+F 0 "#PWR0102" H 1350 2800 50  0001 C CNN
+F 1 "GND" V 1355 2922 50  0000 R CNN
+F 2 "" H 1350 3050 50  0001 C CNN
+F 3 "" H 1350 3050 50  0001 C CNN
+	1    1350 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 3050 1350 3050
+Wire Notes Line
+	550  2550 1650 2550
+Wire Notes Line
+	550  3450 1650 3450
+$EndSCHEMATC

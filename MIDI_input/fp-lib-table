@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name w_conn_av)(type Legacy)(uri ${KIPRJMOD}/components/mod_conn_av/w_conn_av.mod)(options "")(descr ""))
+)
