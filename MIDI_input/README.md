@@ -3,18 +3,17 @@
 ![MIDI IO board](/MIDI_input/img/MIDI_input.png?raw=true)
 
 This board is currently intended for use with 5V devices like Arduino.
-It has two DIN-5 ports for input and output and 6N138 to isolate input signal.
+It has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
 
-It is inspired by the fact AliExpress boards for MIDI are not that good and I had to [solder a resistor](https://twitter.com/I_am_6r1d/status/1299311510662021120) straight onto the optocouple
-to make one work.
+It is inspired by the fact AliExpress boards for MIDI are not that good and I had to [solder a resistor](https://twitter.com/I_am_6r1d/status/1299311510662021120) straight onto the optocouple to make one work.
 
-It uses 1k 100 mHz ferrite beads for EMI protection, but doesn't fully match current MIDI DIN specification yet.
+It uses 1k 100 mHz ferrite beads for [EMI protection](https://en.wikipedia.org/wiki/Electromagnetic_interference), but doesn't fully match current [MIDI DIN electrical specification](https://www.midi.org/specifications/item/midi-din-electrical-specification) yet.
 
-Issues and advices are welcome!
+This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). Issues and advices are welcome!
 
 ## To-Do
 
-- [ ] Check contacts on physical DIN-5 sockets: both pins and sizes
+- [ ] Check contacts on physical DIN-5 sockets: both pins and sizes; **sockets are arriving soon**
 - [ ] Finish compatibility with current [MIDI DIN electrical specification](https://www.midi.org/specifications/item/midi-din-electrical-specification)
 - [ ] Test 3V3 mode for Raspberry Pi, add level converters if required
 

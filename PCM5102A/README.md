@@ -1,4 +1,4 @@
-# 5V PCM 5102A interface for Raspberry PI
+# PCM 5102A interface for Raspberry PI
 
 ![PCM5102A DAC board](/PCM5102A/img/PCM5102A.png?raw=true)
 
@@ -10,8 +10,6 @@ According to the datasheed, this configuration is not in any way bad and even sl
 I am using PCM5102A because it has high sound quality and mute circuitry.
 Also, I ordered a board with this chip to test with Raspberry Pi before starting my own one.
 
-The board is designed in [KiCad 5.1.6](https://kicad-pcb.org/).
-
 I added [TPA6132A2](https://www.ti.com/lit/ds/symlink/tpa6132a2.pdf) headphone amplifier to isolate DAC from other devices.
 It is used in a single-ended input signal mode. I have concerns about damaging the DAC with short circuit, so that's why there's a tiny amplifier IC.
 
@@ -22,9 +20,12 @@ There are also 3-ldo versions of the same schematic by AiDiy.cc.
 I guess it has a separate digital, analog and charge pump LDO, and it's a well-known [AMS-1117-3.3](http://www.advanced-monolithic.com/pdf/ds1117.pdf), at that!
 It will be nice to test if there is any difference in sound later.
 
+This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). It has 5V input voltage and 3.3V I²S voltage. Issues and advices are welcome!
+
 ## Progress
 
-I checked schematic using two datasheets for a day. It is still possible to encounter some issues and I haven't tested the board design yet.
+* I checked schematic using two datasheets paying as much attention as I can. It is still possible to encounter some issues and I haven't tested the board design yet.
+* I found out my `5V` label is not related to the signal. RaspberryPi signal level is 3.3V. Changes are not required, since board is based on a design, tested with RaspberryPi.
 
 ## To-Do
 
