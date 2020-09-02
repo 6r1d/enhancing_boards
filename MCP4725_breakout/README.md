@@ -4,12 +4,13 @@
 
 ## Idea
 
-I have a couple MCP4725 boards and I decided I want to copy the layout to KiCad so it's easy to use later in some CV / Gate interface, volume control for an amplifier and so on. Those worked for me in Arduino.
+I have a couple MCP4725 boards and I decided I want to copy the layout to [KiCad](https://kicad-pcb.org/) so it's easy to use later in some [CV/Gate](https://en.wikipedia.org/wiki/CV/gate) interface for music production, volume control for an amplifier and so on. Those worked for me in Arduino, giving a stable amount of voltage.
+
+**Attention!** Output voltage will depend on the input! To imagine how that works, let's say you have a 5V source. Integer you are sending using I²C varies from 0 to 1023. Now, when you have 5V input and 1023 on I²C, you'll have 5V on the output. If you set 0 on I²C, you'll get zero voltage. But you can put any value between 0 and 1023, too, getting all possible in-between voltages. Same goes for 3.3V.
 
 ## Notes
 
 MCP4725 chip works with 3.3V and 5V input. It uses I²C interface to operate.
-**Attention!** Output voltage will depend on the input!
 
 When I used the chip, I found out there are several chip models and I²C address depends on the model and A0 pin, which might be useful to know. SMD resistor on a jumper pad was marked `103`, so I'd say it's 10 kOhm resistor. Testing a real-life breakout board using Mastech MY-68 multimeter shows `10.03 kOhm`, which is close enough.
 

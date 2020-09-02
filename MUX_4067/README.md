@@ -2,7 +2,9 @@
 
 ![Mux image](/MUX_4067/img/MUX_4067.png?raw=true)
 
-## Generic info
+## Idea
+
+If you have never used multiplexors, this IC connects a single pin to **one of** the several outputs, where an output pin is picked using **other** digital input pins. Think [railroad switch](https://en.wikipedia.org/wiki/Railroad_switch), but for electronics, not for railroad.
 
 I had some of those mux board around for quite some time and they are working nicely with Arduino, so I decided to make a copy of a very short schematic and to make my own layout. Why? Well, as usual, to test and be sure I can use them in my own devices later.
 
