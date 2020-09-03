@@ -18,7 +18,7 @@ There are integrated circuits I really want to use later.
 * [Azoteq IQS263B](https://www.azoteq.com/product/iqs263b/) capacitive sensor IC, I²C interface. Allows to make capacitive wheels, sliders and buttons.
 * [Azoteq IQS550-B000](https://www.azoteq.com/product/iqs550-b000/) capacitive sensor IC, 15 rows, 10 columns, 3584 x 2304 max resolution, I²C interface. Allows to make large capacitive sensor panels. **UPD**: I ordered the test kit from DigiKey and it is being delivered by USPS to Qwintry warehouse right now.
 * [CAP1188](https://www.microchip.com/wwwproducts/en/CAP1188) capacitive sensor IC, 8 capacitive sensor inputs, I²C interface.
-* [YF08E](https://www.ti.com/lit/ds/symlink/txs0108e.pdf) and maybe other level converters, since I have those. (There is some concern about the fakes, too, because I saw very different labels for the same chip.)
+* [TXS0108E](https://www.ti.com/lit/ds/symlink/txs0108e.pdf) / YF08E and maybe other level converters, since I have those. (There is some concern about the fakes, too, because I saw very different labels for the same chip.)
 
 ## Testing
 
