@@ -21,6 +21,17 @@ Testing a real-life breakout board with a Mastech MY-68 multimeter shows `4.64 k
 
 This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). Issues and advices are welcome!
 
+### Connection
+
+#### Arduino Uno / Nano
+
+| Arduino pin    | DAC board pin |
+| -------------- | ------------- |
+| `5V` / `3.3V`  | `VCC`         |
+| `GND`          | `GND`         |
+| `A4`           | `SDA`         |
+| `A5`           | `SCL`         |
+
 ### Addresses
 
 There are several possible address value for MCP4725 chip.
@@ -29,16 +40,16 @@ Those depend on exact chip type and on `A0` pin, which can be tied to `Vss` or `
 I found addresses in [I²C devices](https://i2cdevices.org/) site and Adafruit demo.
 My board from AliExpress had `0x60` address.
 
-| Part number | A0 state      | Addr (hex) |
-| ----------- | ------------- | ---------- |
-| MCP4725A0   | default / GND | 0x60       |
-| MCP4725A0   | VCC           | 0x61       |
-| MCP4725A1   | default / GND | 0x62       |
-| MCP4725A1   | VCC           | 0x63       |
-| MCP4725A2   | default / GND | 0x64       |
-| MCP4725A2   | VCC           | 0x65       |
-| MCP4725A3   | default / GND | 0x66       |
-| MCP4725A3   | VCC           | 0x67       |
+| Part number | A0 state      | Addr (hex) | Checked |
+| ----------- | ------------- | ---------- | ------- |
+| MCP4725A0   | default / GND | 0x60       | &#9745; |
+| MCP4725A0   | VCC           | 0x61       | &#9745; |
+| MCP4725A1   | default / GND | 0x62       | &#9744; |
+| MCP4725A1   | VCC           | 0x63       | &#9744; |
+| MCP4725A2   | default / GND | 0x64       | &#9744; |
+| MCP4725A2   | VCC           | 0x65       | &#9744; |
+| MCP4725A3   | default / GND | 0x66       | &#9744; |
+| MCP4725A3   | VCC           | 0x67       | &#9744; |
 
 ### Case labels
 
