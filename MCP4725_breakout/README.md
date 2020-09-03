@@ -27,7 +27,7 @@ There are several possible address value for MCP4725 chip.
 Those depend on exact chip type and on `A0` pin, which can be tied to `Vss` or `Vdd`.
 
 I found addresses in [I²C devices](https://i2cdevices.org/) site and Adafruit demo.
-My IC had `0x60` address.
+My board from AliExpress had `0x60` address.
 
 | Part number | A0 state      | Addr (hex) |
 | ----------- | ------------- | ---------- |
@@ -39,6 +39,18 @@ My IC had `0x60` address.
 | MCP4725A2   | VCC           | 0x65       |
 | MCP4725A3   | default / GND | 0x66       |
 | MCP4725A3   | VCC           | 0x67       |
+
+### Case labels
+
+It might be interesting to know that chips are packed in 6-Lead `SOT-23` case which has a label on it.
+So, if you see `AJ25` label, your part is `MCP4725A0`.
+
+| Part number     | Option | Addresses  |
+| --------------- | ------ | ---------- |
+| MCP4725A0       | AJ NN  | 0x60, 0x61 |
+| MCP4725A1       | AP NN  | 0x62, 0x63 |
+| MCP4725A2       | AQ NN  | 0x64, 0x65 |
+| MCP4725A3       | AR NN  | 0x66, 0x67 |
 
 ## Documentation
 
