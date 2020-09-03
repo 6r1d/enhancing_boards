@@ -72,7 +72,7 @@ So, if you see `AJ25` label, your part is `MCP4725A0`.
 * [Adafruit library](https://github.com/adafruit/Adafruit_MCP4725)
 * [Adafruit tutorial](https://learn.adafruit.com/mcp4725-12-bit-dac-tutorial?view=all)
 * [SparkFun](https://www.sparkfun.com/products/12918) breakout board
-* [EasyEDA version to compare the layout later](https://easyeda.com/alexander.burykin/I2C_DAC_Breakout_MCP4725_Open_hardware-91xPJ1jBu) by [Alexander Burykin](alexander.burykin)
+* [EasyEDA version to compare the layout later](https://easyeda.com/alexander.burykin/I2C_DAC_Breakout_MCP4725_Open_hardware-91xPJ1jBu) by [Alexander Burykin](https://easyeda.com/alexander.burykin)
 * [EasyEDA layout](https://easyeda.com/editor#id=e36a5e46d0c54cee9079e0bdedf030fe)
-* [LCSC components](https://lcsc.com/search?q=MCP4725) to see the price
-* [Additional documentation on MCP4725 (russian)](https://micro-pi.ru/mcp4725-%D1%86%D0%B8%D1%84%D1%80%D0%BE-%D0%B0%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C/)
+* [LCSC components](https://lcsc.com/search?q=MCP4725) to see the current price range. Currently it is around $1 and more for quantities less than 10, can be as low as $0.6 in large quantities.
+* [Additional documentation on MCP4725](https://micro-pi.ru/mcp4725-%D1%86%D0%B8%D1%84%D1%80%D0%BE-%D0%B0%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C/) (russian)
