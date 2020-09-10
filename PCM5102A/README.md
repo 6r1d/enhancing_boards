@@ -40,6 +40,8 @@ This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). It has 5V input
 - [ ] It will be interesting to test 1 and 3 LDO configuration later. It seems the datasheet relies on one LDO, while AiDiy schematic relies on three.
 - [ ] Add a MUTE pin controlling optocouples for DAC and AMP ICs
 
+UPD: TPA6132 breakout board is here, so I can test it before I do toner-transfer. Sep 10, 2020.
+
 ## Datasheets
 
 * [DAC datasheet](https://www.ti.com/lit/ds/symlink/pcm5102a.pdf)
