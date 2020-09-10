@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/grid/flow/electronics/enhancing_boards/MIDI_input/MIDI_input.sch)
-    (date "Чт 10 сен 2020 05:05:52")
+    (source /home/grid/flow/electronics/enhancing_boards/MIDI_IO/MIDI_IO.sch)
+    (date "Чт 10 сен 2020 06:23:59")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,7 +9,7 @@
         (company 6r1d)
         (rev 0.8)
         (date 2020-08-26)
-        (source MIDI_input.sch)
+        (source MIDI_IO.sch)
         (comment (number 1) (value "Currently untested, awaits DIN-5 sockets to check sizes and pins"))
         (comment (number 2) (value "Based on a circuit by Notes and Volts and MIDI DIN electrical specification"))
         (comment (number 3) (value ""))
