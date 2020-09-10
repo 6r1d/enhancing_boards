@@ -1,6 +1,6 @@
 # MIDI 5V I/O board
 
-![MIDI IO board](/MIDI_input/img/MIDI_input.png?raw=true)
+![MIDI IO board](/MIDI_IO/img/MIDI_input.png?raw=true)
 
 This board is currently intended for use with 5V devices like Arduino.
 It has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
