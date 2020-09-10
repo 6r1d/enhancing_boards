@@ -13,9 +13,10 @@ This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). Issues and advi
 
 ## To-Do
 
-- [ ] Check contacts on physical DIN-5 sockets: both pins and sizes; **sockets are arriving soon**
+- [ ] Check contacts on physical DIN-5 sockets: both pins and sizes; **UPD**: sockets have arrived, testing soon
 - [ ] Finish compatibility with current [MIDI DIN electrical specification](https://www.midi.org/specifications/item/midi-din-electrical-specification)
-- [ ] Test 3V3 mode for Raspberry Pi, add level converters if required
+- [ ] Test 3V3 mode for [Raspberry Pi](https://www.raspberrypi.org/), add level converters if required
+- [ ] Clean components up
 
 ## Credits
 

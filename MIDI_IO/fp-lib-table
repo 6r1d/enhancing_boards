@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name w_conn_av)(type Legacy)(uri ${KIPRJMOD}/components/mod_conn_av/w_conn_av.mod)(options "")(descr ""))
+  (lib (name MIDI_IO)(type KiCad)(uri ${KIPRJMOD}/components/MIDI_IO.pretty)(options "")(descr ""))
 )
