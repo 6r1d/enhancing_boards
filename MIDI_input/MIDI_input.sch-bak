@@ -8,8 +8,8 @@ Title "MIDI 5V I/O circuit"
 Date "2020-08-26"
 Rev "0.8"
 Comp "6r1d"
-Comment1 "Based on a circuit by Notes and Volts and MIDI DIN electrical specification"
-Comment2 ""
+Comment1 "Currently untested, awaits DIN-5 sockets to check sizes and pins"
+Comment2 "Based on a circuit by Notes and Volts and MIDI DIN electrical specification"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -88,8 +88,8 @@ $Comp
 L Connector:DIN-5_180degree J_IN_1
 U 1 1 5F458A90
 P 3800 1000
-F 0 "J_IN_1" H 3800 633 50  0000 C CNN
-F 1 "DIN-5_180degree" H 3800 724 50  0000 C CNN
+F 0 "J_IN_1" H 3800 750 50  0000 C CNN
+F 1 "DIN-5_180degree" H 3800 724 50  0001 C CNN
 F 2 "w_conn_av:din-5" H 3800 1000 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3800 1000 50  0001 C CNN
 	1    3800 1000

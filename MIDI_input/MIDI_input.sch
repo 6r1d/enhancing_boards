@@ -88,8 +88,8 @@ $Comp
 L Connector:DIN-5_180degree J_IN_1
 U 1 1 5F458A90
 P 3800 1000
-F 0 "J_IN_1" H 3800 633 50  0000 C CNN
-F 1 "DIN-5_180degree" H 3800 724 50  0000 C CNN
+F 0 "J_IN_1" H 3800 750 50  0000 C CNN
+F 1 "DIN-5_180degree" H 3800 724 50  0001 C CNN
 F 2 "w_conn_av:din-5" H 3800 1000 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3800 1000 50  0001 C CNN
 	1    3800 1000
@@ -195,7 +195,7 @@ U 1 1 5F431E0C
 P 4850 1350
 F 0 "D1" V 4850 1200 50  0000 L CNN
 F 1 "1N914" H 4750 1450 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4850 1175 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4850 1175 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4850 1350 50  0001 C CNN
 	1    4850 1350
 	0    1    1    0   

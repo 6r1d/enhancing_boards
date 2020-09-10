@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/grid/flow/electronics/enhancing_boards/MIDI_input/MIDI_input.sch)
-    (date "Вт 01 сен 2020 13:10:49")
+    (date "Чт 10 сен 2020 05:05:52")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -66,7 +66,7 @@
       (tstamp 5F43292B))
     (comp (ref D1)
       (value 1N914)
-      (footprint Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal)
+      (footprint Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder)
       (datasheet http://www.vishay.com/docs/85622/1n914.pdf)
       (libsource (lib Diode) (part 1N914) (description "100V 0.3A Small Signal Fast Switching Diode, DO-35"))
       (sheetpath (names /) (tstamps /))
