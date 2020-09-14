@@ -1,6 +1,6 @@
 # MIDI 5V I/O board
 
-![MIDI IO board](/MIDI_IO/img/MIDI_input.png?raw=true)
+[![MIDI IO board](https://i.imgur.com/3CaKhEJ.png)](https://imgur.com/a/qws0TRt)
 
 This board is currently intended for use with 5V devices like Arduino.
 It has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
@@ -13,7 +13,9 @@ This board is designed in [KiCad 5.1.6](https://kicad-pcb.org/). Issues and advi
 
 ## To-Do
 
-- [x] Check contacts on physical DIN-5 sockets: both pins and sizes; **UPD**: sockets have arrived, testing soon; **UPD-2**: ordered the board
+- [x] Check contacts on physical DIN-5 sockets: both pins and sizes
+- - **UPD**: sockets have arrived, testing soon
+- - **UPD-2**: ordered the board, optocouples and diodes arrived, waiting for passive components
 - [x] Finish compatibility with current [MIDI DIN electrical specification](https://www.midi.org/specifications/item/midi-din-electrical-specification)
 - [x] Clean components up
 - [ ] Test 3V3 mode for [Raspberry Pi](https://www.raspberrypi.org/), add level converters if required
