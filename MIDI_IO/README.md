@@ -1,8 +1,8 @@
-# MIDI 5V I/O board
+# MIDI I/O board
 
 [![MIDI IO board](https://i.imgur.com/3CaKhEJ.png)](https://imgur.com/a/qws0TRt)
 
-This board is currently intended for use with devices, which have 5V [logic level](https://en.wikipedia.org/wiki/Logic_level) like [Arduino](https://www.arduino.cc/).
+This board is currently intended for use with devices, which have 5V [logic level](https://en.wikipedia.org/wiki/Logic_level) like [Arduino](https://www.arduino.cc/) and 3.3 V version will be different only component-wise. Check schematic to pick correct resistors or look up MIDI DIN Electrical [Specification](https://www.midi.org/specifications-old/item/midi-din-electrical-specification).
 It has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
 I've bought my DIN-5 sockets [here](https://aliexpress.ru/item/32402564814.html) on AliExpress, which seems cheap enough.
 
