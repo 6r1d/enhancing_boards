@@ -4,6 +4,7 @@
 
 This board is currently intended for use with devices, which have 5V [logic level](https://en.wikipedia.org/wiki/Logic_level) like [Arduino](https://www.arduino.cc/).
 It has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
+I've bought my DIN-5 sockets [here](https://aliexpress.ru/item/32402564814.html) on AliExpress, which seems cheap enough.
 
 It is inspired by the fact [AliExpress](http://aliexpress.com/) boards for [MIDI](https://en.wikipedia.org/wiki/MIDI) are not that good and I had to [solder a resistor](https://twitter.com/I_am_6r1d/status/1299311510662021120) straight onto the optocouple leads to make one work.
 
