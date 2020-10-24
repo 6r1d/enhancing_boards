@@ -32,7 +32,7 @@ If you want to do tests right now, **feel free to create an issue**! I will prov
 | Directory                             | State                            | Description                                         |
 | ------------------------------------- | -------------------------------- | --------------------------------------------------- |
 | [PCM5102A](/PCM5102A)                 | UNTESTED                         | [PCM5102A](https://www.ti.com/product/PCM5102A) [I²S](https://en.wikipedia.org/wiki/I%C2%B2S) dac with [TPA6132A2](https://www.ti.com/product/TPA6132A2) headphone amp |
-| [MIDI I/O](/MIDI_IO)                  | TESTING, currently waiting for SMD components, most parts received | [MIDI](https://en.wikipedia.org/wiki/MIDI) [I/O](https://en.wikipedia.org/wiki/Input/output) board for 5V devices                       |
+| [MIDI I/O](/MIDI_IO)                  | STABLE, tested for 5V | [MIDI](https://en.wikipedia.org/wiki/MIDI) [I/O](https://en.wikipedia.org/wiki/Input/output) board for 5V devices                       |
 | [MCP4725 breakout](/MCP4725_breakout) | UNTESTED                         | [I²C](https://en.wikipedia.org/wiki/I%C2%B2C) [DAC](https://en.wikipedia.org/wiki/Digital-to-analog_converter) breakout board, 1 output                    |
 | [MCP4728 breakout](/MCP4728_breakout) | UNTESTED                         | [I²C](https://en.wikipedia.org/wiki/I%C2%B2C) [DAC](https://en.wikipedia.org/wiki/Digital-to-analog_converter) breakout board, 4 outputs                   |
 | [MUX_4067](/MUX_4067)                 | UNTESTED                         | 16-pin analog / digital [multiplexor](https://en.wikipedia.org/wiki/Multiplexer) breakout board  |
