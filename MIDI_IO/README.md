@@ -2,13 +2,13 @@
 
 Assembled:
 
-[![MIDI IO ports](https://i.imgur.com/nvwDDXi.jpg)]
+![MIDI IO ports](https://i.imgur.com/nvwDDXi.jpg)
 
-[![MIDI IO back](https://i.imgur.com/HxjOJei.jpg)]
+![MIDI IO back](https://i.imgur.com/HxjOJei.jpg)
 
 3D render:
 
-[![MIDI IO board](https://i.imgur.com/3CaKhEJ.png)](https://imgur.com/a/qws0TRt)
+![MIDI IO board](https://i.imgur.com/3CaKhEJ.png)
 
 [PCB photos](https://i.imgur.com/VaKc3Vo.jpg)
 
