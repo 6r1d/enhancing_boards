@@ -19,7 +19,7 @@ I'm still concerned about the device speed and I want to perform 24 hour long te
 
 ## Specifications
 
-This board has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal.
+This board has two DIN-5 ports for input and output and [6N138](https://www.vishay.com/docs/83605/6n139.pdf) to isolate input signal. 6N138 optoisolators were bought [here](https://aliexpress.ru/item/32545548201.html?spm=a2g0s.9042311.0.0.264d33edC1LcYz) and were tested by me well.
 I've bought my DIN-5 sockets [here](https://aliexpress.ru/item/32402564814.html) on AliExpress, which seems cheap enough.
 
 It is inspired by the fact [AliExpress](http://aliexpress.com/) boards for [MIDI](https://en.wikipedia.org/wiki/MIDI) are not that good and I had to [solder a resistor](https://twitter.com/I_am_6r1d/status/1299311510662021120) straight onto the optocouple leads to make one work.
